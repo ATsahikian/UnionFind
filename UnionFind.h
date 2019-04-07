@@ -10,7 +10,7 @@ using namespace std;
 
 /*
    Lazy implementation of UnionFind by rank and path compression optimizations.
-   Amortized time complexity is O(mlog*n), n - number of nodes, m - amount of fuse and find operation.
+   Amortized time complexity is O(mlog*n), n - number of nodes, m - amount of fuse and find operations.
    log* - stands for log star not multiplication. Worst case for single operation is O(log n).
 */
 
@@ -69,7 +69,7 @@ private:
    friend void dumpUnionFindData(const TUnionFind<TNodeId> & uf);
    /*
       - Index corresponds to nodeId.
-      - Value coresponds to leaderNodeId.
+      - Value corresponds to leaderNodeId.
       - NodeId always starts with zero.
    */
    vector<TNodeId> mNodes;
